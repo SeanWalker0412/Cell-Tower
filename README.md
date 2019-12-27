@@ -2,6 +2,10 @@
 ```
 By: Sean Walker, Abby Conoyer, Cristin Durbin
 
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
 This guide explains the intricacies involved in establishing a personal cell tower. Using Ubuntu, Open Source Applications, and some specialized hardware,  we explain how one can go about connecting Unlocked-GSM phones to a personal tower. Hence, alleviating the need for a cellular service provider.
 
 **CAUTION: This project was strictly performed in an educational environment. Pursuing this project as a means of malintent is strictly prohibited by federal law. If one chooses to channel promiscuous mode, they choose to do so at their own risk. Consider this a warning. We will not be held responsible.
