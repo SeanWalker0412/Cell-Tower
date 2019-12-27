@@ -179,7 +179,7 @@ As verified by the screenshots, the setup is complete. You should be able to rep
 Two resources we found to be incredibly useful were those listed below. Fortunately, we weren’t the first ones to conquer this endeavor. 
 
 
-References
+### References
 
 https://www.evilsocket.net/2016/03/31/how-to-build-your-own-rogue-gsm-bts-for-fun-and-profit/ 
     
