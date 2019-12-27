@@ -1,8 +1,6 @@
-# Cell-Tower
-
-					DIY GSM Cell Tower Using Yate and Yate-BTS 
-
-					By: Sean Walker, Abby Conoyer, Cristin Durbin
+# DIY GSM Cell Tower Using Yate and Yate-BTS 
+```
+By: Sean Walker, Abby Conoyer, Cristin Durbin
 
 This guide explains the intricacies involved in establishing a personal cell tower. Using Ubuntu, Open Source Applications, and some specialized hardware,  we explain how one can go about connecting Unlocked-GSM phones to a personal tower. Hence, alleviating the need for a cellular service provider.
 
