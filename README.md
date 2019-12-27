@@ -1,4 +1,4 @@
-## Cell-Tower
+# Cell-Tower
 
 					DIY GSM Cell Tower Using Yate and Yate-BTS 
 
@@ -10,13 +10,13 @@ This guide explains the intricacies involved in establishing a personal cell tow
 
 Disclaimer: Continue with this tutorial if and only if the intended use is confined to an institutional domain. The legal consequences should also be considered. 
 
-# Materials needed for this project:
+### Materials needed for this project:
 BladeRF x40 ($420)
 Host running ubuntu 16.4 32-bit
 2 GSM-compatible phones
 Programmable Sim Cards (around $10)
 
-# Software 
+### Software 
 Please begin by downloading Ubuntu 16.4 on a flashdrive. It is crucial that the image grabbed is compatible with the host environment. Since we are using a 32 bit laptop, we installed the 32 bit operating system. However, if your machine is 64 bit, opt to place the 64 bit image on the flash drive instead.
 
 After verifying that the appropriate image resides on the bootable USB, or flash drive, connect the USB to one of the host’s many peripheral ports. Then move the Ubuntu operating system from the USB device to the local host. Follow the prompts provided by the install-assistant. Once the configurations have been made and Ubuntu has been stood up on the host, safely eject the USB drive from the laptop. 
