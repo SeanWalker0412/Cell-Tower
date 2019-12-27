@@ -1,24 +1,21 @@
 # DIY GSM Cell Tower Using Yate and Yate-BTS 
 ```
-By: Sean Walker, Abby Conoyer, Cristin Durbin
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+By: Sean Walker, Abby Conoyer, Cristin Durbin
 
 This guide explains the intricacies involved in establishing a personal cell tower. Using Ubuntu, Open Source Applications, and some specialized hardware,  we explain how one can go about connecting Unlocked-GSM phones to a personal tower. Hence, alleviating the need for a cellular service provider.
 
 **CAUTION: This project was strictly performed in an educational environment. Pursuing this project as a means of malintent is strictly prohibited by federal law. If one chooses to channel promiscuous mode, they choose to do so at their own risk. Consider this a warning. We will not be held responsible.
 
 Disclaimer: Continue with this tutorial if and only if the intended use is confined to an institutional domain. The legal consequences should also be considered. 
-
+```
 ### Materials needed for this project:
 
 BladeRF x40 ($420)
 Host running ubuntu 16.4 32-bit
 2 GSM-compatible phones
 Programmable Sim Cards (around $10)
-
+```
 ### Software 
 Please begin by downloading Ubuntu 16.4 on a flashdrive. It is crucial that the image grabbed is compatible with the host environment. Since we are using a 32 bit laptop, we installed the 32 bit operating system. However, if your machine is 64 bit, opt to place the 64 bit image on the flash drive instead.
 
@@ -30,7 +27,7 @@ sudo apt-get install libusb-1.0-0-dev
 sudo apt-get install git 
 sudo apt-get install autoconf
 sudo apt-get install bladerf
-
+```
 Before anything else is done, it is crucial that you create a directory which will store the many source files. Our directory resides on the Desktop. In order to follow along we encourage you to do the same. This directory will serve as repository ensuring that our open source tools can call upon the needed source files. Creating a directory may be done in the GUI or via the terminal. Name the folder whatever you would like. Since we will be referencing the path of this directory rather frequently, choose something that you can easily recall. We recommend naming it ‘Project’-or similar.
 
 After you establish a directory on the desktop, use the terminal, or the gui, to access the newly created directory. In order to access the directory via the terminal use the ls and cd commands. 
@@ -155,10 +152,8 @@ IMPORTANT: After three failed attempts of trying to program a SIM’s ADM key, t
 
 You can now place this SIM in any GSM compatible phone and the SIM be recognized.  If your BladeRF tower is transmitting, you can expect the newly programmed SIM/Cellular combo to connect within five to ten minutes.
 Testing the Sim Cards with the BladeRF tower 
-
-
-
  
+
 
 As demonstrated in the following images, we were able to connect multiple devices to the cellular network. We were prompted with a welcome message which assigned us our phone number. We texted our environment by exchanging text messages and exchanging phone calls.
 
