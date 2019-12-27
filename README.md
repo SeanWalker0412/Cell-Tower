@@ -37,6 +37,7 @@ While in this new directory, let's call it Project, download the FPGA and the fi
 
 wget https://www.nuand.com/fpga/v0.1.2/hostedx40.rbf //BladeRF FPGA 0.1.2
 wget https://www.nuand.com/fx3/bladeRF_fw_v1.6.1.img //BladeRF Firmware 1.6.1
+
 ```
 The next step is to install the yate and yate-bts packages. If you choose to forgo our versions used, understand that you will have to play around with the version numbers of Yate and YateBTS to see which ones are compatible.  With help from the guys over at  https://github.com/security-geeks/evilbts we were able to obtain the latest compatible versions. You can download the two packages here. Or pay a visit to the security geek’s github-https://github.com/security-geeks/evilbts. This file is of type tarball. As a result, we will use the command tar xvzf “filename” in order to extract its contents. Upon doing so, you will see a folder called evilbts. Now use the cd command to examine its contents.
 
