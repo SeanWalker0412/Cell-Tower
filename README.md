@@ -6,17 +6,17 @@
 
 This guide explains the intricacies involved in establishing a personal cell tower. Using Ubuntu, Open Source Applications, and some specialized hardware,  we explain how one can go about connecting Unlocked-GSM phones to a personal tower. Hence, alleviating the need for a cellular service provider.
 
-CAUTION: This project was strictly performed in an educational environment. Pursuing this project as a means of malintent is strictly prohibited by federal law. If one chooses to channel promiscuous mode, they choose to do so at their own risk. Consider this a warning. We will not be held responsible.
+**CAUTION: This project was strictly performed in an educational environment. Pursuing this project as a means of malintent is strictly prohibited by federal law. If one chooses to channel promiscuous mode, they choose to do so at their own risk. Consider this a warning. We will not be held responsible.
 
 Disclaimer: Continue with this tutorial if and only if the intended use is confined to an institutional domain. The legal consequences should also be considered. 
 
-#Materials needed for this project:
+# Materials needed for this project:
 BladeRF x40 ($420)
 Host running ubuntu 16.4 32-bit
 2 GSM-compatible phones
 Programmable Sim Cards (around $10)
 
-#Software 
+# Software 
 Please begin by downloading Ubuntu 16.4 on a flashdrive. It is crucial that the image grabbed is compatible with the host environment. Since we are using a 32 bit laptop, we installed the 32 bit operating system. However, if your machine is 64 bit, opt to place the 64 bit image on the flash drive instead.
 
 After verifying that the appropriate image resides on the bootable USB, or flash drive, connect the USB to one of the host’s many peripheral ports. Then move the Ubuntu operating system from the USB device to the local host. Follow the prompts provided by the install-assistant. Once the configurations have been made and Ubuntu has been stood up on the host, safely eject the USB drive from the laptop. 
