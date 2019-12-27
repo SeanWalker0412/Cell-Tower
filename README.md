@@ -18,7 +18,7 @@ Programmable Sim Cards (around $10)
 Please begin by downloading Ubuntu 16.4 on a flashdrive. It is crucial that the image grabbed is compatible with the host environment. Since we are using a 32 bit laptop, we installed the 32 bit operating system. However, if your machine is 64 bit, opt to place the 64 bit image on the flash drive instead.
 
 After verifying that the appropriate image resides on the bootable USB, or flash drive, connect the USB to one of the host’s many peripheral ports. Then move the Ubuntu operating system from the USB device to the local host. Follow the prompts provided by the install-assistant. Once the configurations have been made and Ubuntu has been stood up on the host, safely eject the USB drive from the laptop. 
-
+```
 Now that Ubuntu has been installed on the host, open the terminal. We will begin installing the dependencies needed by our tower. In order to install the first dependency, type the following command from the terminal: 
 
 sudo apt-get install libusb-1.0-0-dev 
@@ -37,7 +37,7 @@ While in this new directory, let's call it Project, download the FPGA and the fi
 
 wget https://www.nuand.com/fpga/v0.1.2/hostedx40.rbf //BladeRF FPGA 0.1.2
 wget https://www.nuand.com/fx3/bladeRF_fw_v1.6.1.img //BladeRF Firmware 1.6.1
-
+```
 The next step is to install the yate and yate-bts packages. If you choose to forgo our versions used, understand that you will have to play around with the version numbers of Yate and YateBTS to see which ones are compatible.  With help from the guys over at  https://github.com/security-geeks/evilbts we were able to obtain the latest compatible versions. You can download the two packages here. Or pay a visit to the security geek’s github-https://github.com/security-geeks/evilbts. This file is of type tarball. As a result, we will use the command tar xvzf “filename” in order to extract its contents. Upon doing so, you will see a folder called evilbts. Now use the cd command to examine its contents.
 
 cd evilbts 
@@ -61,8 +61,9 @@ sudo ldconfig
 cd ..
 
 Either process will take a few minutes to complete. However, once they do, you’ll have everything installed on your system.
-
-Configuration 
+```
+## Configuration 
+```
 The  configurations are the most important part of the project. During this section we will configure the BladeRF so that it works with GSM phones. In order to do this we need to modify a file residing in the yate directory. In order to access this file, we will need to follow its path. Perform the following:
 
 	cd /usr/local/etc/yate
@@ -80,7 +81,7 @@ Identity.MNC=YOUR_OPERATOR_MNC (in the USE is 01)
 Identity.shortName=MyEvilBTS
 Radio.PowerManger.MaxAttenDB=35
 Radio.PowerManger.MinAttenDB=35
-
+```
 Save the contents of the text file. Once the options have been saved, close the text editor. If you are looking for values other than those of the United States, visit this link to obtain that MCC and MNC information. 
 
 **NOTE- We couldn’t find the Identity.shortName variable in our ybts.conf file. If it isn’t readily apparent in yours, skip said field. It does not affect the project.**
@@ -96,7 +97,7 @@ The regexp will retain the list of authorized devices able to connect. We left t
 
 **NOTE: By default the regexp value populates to .* mode. This is what many deem promiscuous mode. Promiscuous mode insinuates that every nearby phone will connect to the tower. Although promiscuous mode is highly entertaining, it is also highly illegal.**
 
-Start Broadcasting 
+## Start Broadcasting 
 
 If you have made it this far, you are ready to broadcast. In order to start broadcasting go to the command prompt and type:
 
